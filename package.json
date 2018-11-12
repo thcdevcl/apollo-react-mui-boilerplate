@@ -2,10 +2,13 @@
   "name": "nomadscore",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "dev": "meteor --settings settings.development.json"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
+    "@material-ui/core": "^3.4.0",
+    "@material-ui/icons": "^3.0.1",
     "apollo-boost": "^0.1.20",
     "apollo-server-express": "^2.2.0",
     "bcrypt": "^3.0.2",
