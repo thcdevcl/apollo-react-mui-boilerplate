@@ -12,6 +12,7 @@ import Spinner from "../utils/Spinner";
 import PublicRoute from "./PublicRoute";
 
 import LandingPage from "../../pages/LandingPage";
+import NotFound from "../../pages/NotFound";
 
 const Router = ({ loading, user }) => {
   if (loading) return <Spinner color="primary" />;
@@ -27,6 +28,12 @@ const Router = ({ loading, user }) => {
               name="landing-page"
               content="index"
               title="Home"
+            />
+            <PublicRoute
+              component={NotFound}
+              name="not-found"
+              content="404"
+              title="Error!"
             />
           </Switch>
         </ScrollTop>
